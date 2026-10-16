@@ -1,0 +1,82 @@
+# ---------------------------------------------------------------
+# Python / backend
+# ---------------------------------------------------------------
+
+# Ambiente virtual
+venv/
+.venv/
+env/
+
+# Cache e ferramentas do Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ---------------------------------------------------------------
+# Segredos e configuração local (NUNCA versionar)
+# ---------------------------------------------------------------
+
+# Variáveis de ambiente (o modelo sem segredos é o .env.example)
+.env
+.env.*
+!.env.example
+
+# Chaves e certificados de assinatura
+*.pem
+*.key
+*.p8
+*.p12
+*.jks
+*.mobileprovision
+
+# ---------------------------------------------------------------
+# Arquivos gerados quando o sistema roda
+# (o código cria essas pastas sozinho, não precisa versioná-las)
+# ---------------------------------------------------------------
+
+# Imagens das peças, recortes aguardando aprovação e debug da remoção de fundo
+/saida/
+/temp_previews/
+/debug_rembg/
+
+# Relatórios de métricas (dados de uso) e fotos de teste do benchmark
+/relatorios/
+/benchmark_fotos/
+
+# Banco de dados local
+*.db
+*.sqlite3
+
+# ---------------------------------------------------------------
+# Front-end (Expo / React Native)
+# ---------------------------------------------------------------
+
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+*.tsbuildinfo
+
+# Pastas nativas geradas pelo "expo prebuild"
+/frontPlum/android/
+/frontPlum/ios/
+
+# Logs
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# ---------------------------------------------------------------
+# Editor, ferramentas de IA e sistema operacional
+# ---------------------------------------------------------------
+
+.vscode/
+.idea/
+.claude/
+.kiro/
+.DS_Store
+Thumbs.db
